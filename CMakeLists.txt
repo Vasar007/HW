@@ -12,7 +12,7 @@ find_package(Qt5 COMPONENTS Core Network REQUIRED)
 if (MSVC)
     add_compile_options(/W4)
 else ()
-    add_compile_options(-Wall -Wextra -Wpedantic -lrt -lpthread)
+    add_compile_options(-Wall -Wextra -Wpedantic -lrt -lpthread -pthread)
 endif()
 
 set (CMAKE_PREFIX_PATH "/usr/include/x86_64-linux-gnu/qt5")
