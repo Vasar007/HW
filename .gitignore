@@ -262,10 +262,5 @@ __pycache__/
 *.pyc
 
 
-# User-defined section
-
-# Logs
-*.txt
-
 # Additional dependencies
 [Dd]ependencies/
