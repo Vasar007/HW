@@ -2,7 +2,7 @@
 
 set -x
 
-EXTRA_CMAKE_FLAGS=-DCMAKE_PREFIX_PATH='/usr/lib/x86_64-linux-gnu/qt5'
+EXTRA_CMAKE_FLAGS=-DCMAKE_PREFIX_PATH='/usr/include/x86_64-linux-gnu/qt5'
 BUILD_TYPE==-DCMAKE_BUILD_TYPE=Debug
 
 CC=gcc
