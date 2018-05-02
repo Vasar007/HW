@@ -1,0 +1,33 @@
+sudo: required
+dist: trusty
+
+language: cpp
+
+services: docker
+
+cache:
+  directories:
+    - $HOME/travisCacheDir
+
+branches:
+  only:
+    - master
+
+matrix:
+  fast_finish: true
+
+matrix:
+  include:
+    - os: linux
+      env: BUILD_TYPE=RelWithDebInfo
+    #- os: osx
+    #  env: BUILD_TYPE=Debug
+    #- os: osx
+    #  env: BUILD_TYPE=Release
+
+before_install:
+  - .travis/os_setup.sh
+
+script:
+  - mkdir _build_
+  - .travis/os_build.sh
