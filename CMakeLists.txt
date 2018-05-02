@@ -15,6 +15,8 @@ else ()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set (CMAKE_PREFIX_PATH "/usr/include/x86_64-linux-gnu/qt5")
+
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
