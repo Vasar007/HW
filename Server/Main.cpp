@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include <QCoreApplication>
 
 #include "Server.h"
@@ -13,7 +15,7 @@ int main(int argc, char* argv[])
     quint16 serverPort;
     std::cin >> serverPort;
 
-   	vasily::Server server(kServerPort);
+   	vasily::Server server(serverPort);
     server.launch();
 
     return a.exec();

@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.7)
+cmake_minimum_required(VERSION 3.3)
 
 project(Server)
 
@@ -18,4 +18,5 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     Qt5::Core
     Qt5::Network
+    Threads::Threads
 )
