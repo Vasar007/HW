@@ -12,13 +12,15 @@ int main(int argc, char* argv[])
 
     qDebug() << "Console client for connecting to Server v 0.1\n\n";
 
-    constexpr quint16 kServerPort = 9999;
+    qDebug() << "Input server port:";
+    quint16 serverPort;
+    std::cin >> serverPort;
 
     qDebug() << "Input server IP:";
     std::string serverIP;
     std::cin >> serverIP;
 
-    vasily::Client client(kServerPort, serverIP);
+    vasily::Client client(serverPort, serverIP);
     client.launch();
     client.run();
 
