@@ -46,7 +46,7 @@ void Server::slotClientDisconnected() const
 
 void Server::launch() const
 {
-    if (_socket->listen(QHostAddress::Any, _port))
+    if (_socket->listen("192.168.1.42", _port))
     {
         qDebug() << "Server is started!\n";
     }
