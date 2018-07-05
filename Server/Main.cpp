@@ -9,8 +9,11 @@ int main(int argc, char* argv[])
 
     qDebug() << "Console server v 0.1\n\n";
 
-    constexpr quint16 kServerPort = 9999;
-    vasily::Server server(kServerPort);
+    qDebug() << "Input server port:";
+    quint16 serverPort;
+    std::cin >> serverPort;
+
+   	vasily::Server server(kServerPort);
     server.launch();
 
     return a.exec();
